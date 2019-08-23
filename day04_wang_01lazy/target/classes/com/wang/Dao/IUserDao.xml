@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wang.Dao.IUserDao">
+
+
+<!--    配置查询所有-->
+    <resultMap id="userAccount" type="com.wang.domain.User">
+        <id property="id" column="id"></id>
+        <result property="username" column="username"></result>
+        <result property="address" column="address"></result>
+        <result property="sex" column="sex"></result>
+        <result property="birthday" column="birthday"></result>
+        <collection property="accounts" ofType="com.wang.domain.Account" select="com.wang.Dao.IaccountDao.findAccountById" column="id">
+        </collection>
+    </resultMap>
+    <select id="findAll" resultMap="userAccount">
+        select * from user
+    </select>
+    <select id="findById" resultType="com.wang.domain.User" parameterType="INT" >
+        select * from user where id=#{uid}
+    </select>
+</mapper>

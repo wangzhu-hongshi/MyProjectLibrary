@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wang.Dao.IUserDao">
+<!--    当类属性名和数据库表中的属性名不对应时 采用-->
+    <resultMap id="UserMap" type="com.wang.domain.User">
+<!--        主键字段对应  pro是类属性名  column是数据库名-->
+        <id property="" column=""></id>
+<!--        非主字段 -->
+        <result property="" column=""></result>
+    </resultMap>
+<!--    配置查询所有-->
+    <select id="findAll" resultType="com.wang.domain.User">
+        select * from user
+    </select>
+    <!-- 配置保存用户 添加后获取添加数据后的id -->
+    <insert id="save" parameterType="com.wang.domain.User">
+        <selectKey keyProperty="id" order="AFTER" resultType="int" keyColumn="id">
+            select last_insert_id();
+        </selectKey>
+        insert into user (username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address});
+    </insert>
+<!--    配置模糊查询-->
+    <select id="findByName" parameterType="String" resultType="com.wang.domain.User">
+        select * from user where username like #{name};
+    </select>
+<!--   动态sql 条件查询-->
+    <select id="findByQ" resultType="com.wang.domain.User" parameterType="com.wang.domain.QueryVo">
+        select * from user
+        <where>
+            <if test="ids !=null and ids.size() > 0">
+                <foreach collection="ids" open=" and id in (" close=")" item="uid" separator=",">
+                    #{uid}
+                </foreach>
+            </if>
+        </where>
+    </select>
+</mapper>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.wang.dao.IUserDao">
+    <select id="findAll" resultType="com.wang.domain.User">
+        select * from user
+    </select>
+    <select id="findById" parameterType="int" resultType="com.wang.domain.User">
+        select * from user where id=#{id}
+    </select>
+
+    <insert id="insert" parameterType="com.wang.domain.User">
+        <selectKey keyColumn="id" keyProperty="id" resultType="int">
+            select last_insert_id();
+        </selectKey>
+        insert into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
+    </insert>
+</mapper>

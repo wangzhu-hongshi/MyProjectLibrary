@@ -1,0 +1,129 @@
+2019-06-17 14:52:01,332 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-06-17 14:52:01,484 152    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 14:52:01,484 152    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 14:52:01,484 152    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 14:52:01,484 152    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 14:52:01,624 292    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2019-06-17 14:52:01,884 552    [           main] DEBUG source.pooled.PooledDataSource  - Created connection 171497379.
+2019-06-17 14:52:01,884 552    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a38d7a3]
+2019-06-17 14:52:01,886 554    [           main] DEBUG m.wang.Dao.IaccountDao.findAll  - ==>  Preparing: select * from account a 
+2019-06-17 14:52:01,913 581    [           main] DEBUG m.wang.Dao.IaccountDao.findAll  - ==> Parameters: 
+2019-06-17 14:52:01,985 653    [           main] DEBUG m.wang.Dao.IaccountDao.findAll  - <==      Total: 3
+2019-06-17 14:52:01,987 655    [           main] DEBUG com.wang.Dao.IUserDao.findById  - ==>  Preparing: select * from user where id=? 
+2019-06-17 14:52:01,988 656    [           main] DEBUG com.wang.Dao.IUserDao.findById  - ==> Parameters: 46(Integer)
+2019-06-17 14:52:01,998 666    [           main] DEBUG com.wang.Dao.IUserDao.findById  - <==      Total: 1
+2019-06-17 14:52:02,005 673    [           main] DEBUG com.wang.Dao.IUserDao.findById  - ==>  Preparing: select * from user where id=? 
+2019-06-17 14:52:02,005 673    [           main] DEBUG com.wang.Dao.IUserDao.findById  - ==> Parameters: 45(Integer)
+2019-06-17 14:52:02,011 679    [           main] DEBUG com.wang.Dao.IUserDao.findById  - <==      Total: 1
+2019-06-17 14:52:02,012 680    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a38d7a3]
+2019-06-17 14:52:02,013 681    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@a38d7a3]
+2019-06-17 14:52:02,013 681    [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 171497379 to pool.
+2019-06-17 15:01:10,767 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-06-17 15:01:10,878 111    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 15:01:10,878 111    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 15:01:10,878 111    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 15:01:10,878 111    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 15:01:10,970 203    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2019-06-17 15:01:11,172 405    [           main] DEBUG source.pooled.PooledDataSource  - Created connection 171497379.
+2019-06-17 15:01:11,172 405    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a38d7a3]
+2019-06-17 15:01:11,174 407    [           main] DEBUG m.wang.Dao.IaccountDao.findAll  - ==>  Preparing: select * from account a 
+2019-06-17 15:01:11,200 433    [           main] DEBUG m.wang.Dao.IaccountDao.findAll  - ==> Parameters: 
+2019-06-17 15:01:11,243 476    [           main] DEBUG m.wang.Dao.IaccountDao.findAll  - <==      Total: 3
+2019-06-17 15:01:11,243 476    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a38d7a3]
+2019-06-17 15:01:11,244 477    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@a38d7a3]
+2019-06-17 15:01:11,244 477    [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 171497379 to pool.
+2019-06-17 15:11:21,719 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-06-17 15:11:21,850 131    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 15:11:21,850 131    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 15:11:21,850 131    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 15:11:21,850 131    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 15:14:40,490 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-06-17 15:14:40,598 108    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 15:14:40,598 108    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 15:14:40,599 109    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 15:14:40,599 109    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 15:14:40,686 196    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2019-06-17 15:14:40,899 409    [           main] DEBUG source.pooled.PooledDataSource  - Created connection 171497379.
+2019-06-17 15:14:40,900 410    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a38d7a3]
+2019-06-17 15:14:40,902 412    [           main] DEBUG  com.wang.Dao.IUserDao.findAll  - ==>  Preparing: select * from user 
+2019-06-17 15:14:40,930 440    [           main] DEBUG  com.wang.Dao.IUserDao.findAll  - ==> Parameters: 
+2019-06-17 15:14:40,989 499    [           main] DEBUG  com.wang.Dao.IUserDao.findAll  - <==      Total: 8
+2019-06-17 15:14:40,990 500    [           main] DEBUG ao.IaccountDao.findAccountById  - ==>  Preparing: select * from account a where uid=? 
+2019-06-17 15:14:40,990 500    [           main] DEBUG ao.IaccountDao.findAccountById  - ==> Parameters: 41(Integer)
+2019-06-17 15:14:40,992 502    [           main] DEBUG ao.IaccountDao.findAccountById  - <==      Total: 0
+2019-06-17 15:14:40,995 505    [           main] DEBUG ao.IaccountDao.findAccountById  - ==>  Preparing: select * from account a where uid=? 
+2019-06-17 15:14:40,996 506    [           main] DEBUG ao.IaccountDao.findAccountById  - ==> Parameters: 42(Integer)
+2019-06-17 15:14:40,996 506    [           main] DEBUG ao.IaccountDao.findAccountById  - <==      Total: 0
+2019-06-17 15:14:40,996 506    [           main] DEBUG ao.IaccountDao.findAccountById  - ==>  Preparing: select * from account a where uid=? 
+2019-06-17 15:14:40,997 507    [           main] DEBUG ao.IaccountDao.findAccountById  - ==> Parameters: 43(Integer)
+2019-06-17 15:14:40,997 507    [           main] DEBUG ao.IaccountDao.findAccountById  - <==      Total: 0
+2019-06-17 15:14:40,997 507    [           main] DEBUG ao.IaccountDao.findAccountById  - ==>  Preparing: select * from account a where uid=? 
+2019-06-17 15:14:40,998 508    [           main] DEBUG ao.IaccountDao.findAccountById  - ==> Parameters: 45(Integer)
+2019-06-17 15:14:40,999 509    [           main] DEBUG ao.IaccountDao.findAccountById  - <==      Total: 1
+2019-06-17 15:14:41,000 510    [           main] DEBUG ao.IaccountDao.findAccountById  - ==>  Preparing: select * from account a where uid=? 
+2019-06-17 15:14:41,000 510    [           main] DEBUG ao.IaccountDao.findAccountById  - ==> Parameters: 46(Integer)
+2019-06-17 15:14:41,002 512    [           main] DEBUG ao.IaccountDao.findAccountById  - <==      Total: 2
+2019-06-17 15:14:41,002 512    [           main] DEBUG ao.IaccountDao.findAccountById  - ==>  Preparing: select * from account a where uid=? 
+2019-06-17 15:14:41,006 516    [           main] DEBUG ao.IaccountDao.findAccountById  - ==> Parameters: 48(Integer)
+2019-06-17 15:14:41,006 516    [           main] DEBUG ao.IaccountDao.findAccountById  - <==      Total: 0
+2019-06-17 15:14:41,007 517    [           main] DEBUG ao.IaccountDao.findAccountById  - ==>  Preparing: select * from account a where uid=? 
+2019-06-17 15:14:41,008 518    [           main] DEBUG ao.IaccountDao.findAccountById  - ==> Parameters: 49(Integer)
+2019-06-17 15:14:41,009 519    [           main] DEBUG ao.IaccountDao.findAccountById  - <==      Total: 0
+2019-06-17 15:14:41,009 519    [           main] DEBUG ao.IaccountDao.findAccountById  - ==>  Preparing: select * from account a where uid=? 
+2019-06-17 15:14:41,009 519    [           main] DEBUG ao.IaccountDao.findAccountById  - ==> Parameters: 50(Integer)
+2019-06-17 15:14:41,010 520    [           main] DEBUG ao.IaccountDao.findAccountById  - <==      Total: 0
+2019-06-17 15:14:41,010 520    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a38d7a3]
+2019-06-17 15:14:41,010 520    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@a38d7a3]
+2019-06-17 15:14:41,011 521    [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 171497379 to pool.
+2019-06-17 15:15:38,310 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-06-17 15:15:38,420 110    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 15:15:38,420 110    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 15:15:38,420 110    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 15:15:38,420 110    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 15:15:38,506 196    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2019-06-17 15:15:38,708 398    [           main] DEBUG source.pooled.PooledDataSource  - Created connection 171497379.
+2019-06-17 15:15:38,708 398    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a38d7a3]
+2019-06-17 15:15:38,710 400    [           main] DEBUG  com.wang.Dao.IUserDao.findAll  - ==>  Preparing: select * from user 
+2019-06-17 15:15:38,735 425    [           main] DEBUG  com.wang.Dao.IUserDao.findAll  - ==> Parameters: 
+2019-06-17 15:15:38,793 483    [           main] DEBUG  com.wang.Dao.IUserDao.findAll  - <==      Total: 8
+2019-06-17 15:15:38,794 484    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a38d7a3]
+2019-06-17 15:15:38,794 484    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@a38d7a3]
+2019-06-17 15:15:38,794 484    [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 171497379 to pool.
+2019-06-17 15:15:57,270 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-06-17 15:15:57,381 111    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 15:15:57,381 111    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 15:15:57,381 111    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 15:15:57,381 111    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-06-17 15:15:57,466 196    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2019-06-17 15:15:57,669 399    [           main] DEBUG source.pooled.PooledDataSource  - Created connection 171497379.
+2019-06-17 15:15:57,669 399    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a38d7a3]
+2019-06-17 15:15:57,671 401    [           main] DEBUG  com.wang.Dao.IUserDao.findAll  - ==>  Preparing: select * from user 
+2019-06-17 15:15:57,699 429    [           main] DEBUG  com.wang.Dao.IUserDao.findAll  - ==> Parameters: 
+2019-06-17 15:15:57,749 479    [           main] DEBUG  com.wang.Dao.IUserDao.findAll  - <==      Total: 8
+2019-06-17 15:15:57,750 480    [           main] DEBUG ao.IaccountDao.findAccountById  - ==>  Preparing: select * from account a where uid=? 
+2019-06-17 15:15:57,750 480    [           main] DEBUG ao.IaccountDao.findAccountById  - ==> Parameters: 41(Integer)
+2019-06-17 15:15:57,751 481    [           main] DEBUG ao.IaccountDao.findAccountById  - <==      Total: 0
+2019-06-17 15:15:57,754 484    [           main] DEBUG ao.IaccountDao.findAccountById  - ==>  Preparing: select * from account a where uid=? 
+2019-06-17 15:15:57,755 485    [           main] DEBUG ao.IaccountDao.findAccountById  - ==> Parameters: 42(Integer)
+2019-06-17 15:15:57,755 485    [           main] DEBUG ao.IaccountDao.findAccountById  - <==      Total: 0
+2019-06-17 15:15:57,756 486    [           main] DEBUG ao.IaccountDao.findAccountById  - ==>  Preparing: select * from account a where uid=? 
+2019-06-17 15:15:57,756 486    [           main] DEBUG ao.IaccountDao.findAccountById  - ==> Parameters: 43(Integer)
+2019-06-17 15:15:57,757 487    [           main] DEBUG ao.IaccountDao.findAccountById  - <==      Total: 0
+2019-06-17 15:15:57,757 487    [           main] DEBUG ao.IaccountDao.findAccountById  - ==>  Preparing: select * from account a where uid=? 
+2019-06-17 15:15:57,757 487    [           main] DEBUG ao.IaccountDao.findAccountById  - ==> Parameters: 45(Integer)
+2019-06-17 15:15:57,759 489    [           main] DEBUG ao.IaccountDao.findAccountById  - <==      Total: 1
+2019-06-17 15:15:57,760 490    [           main] DEBUG ao.IaccountDao.findAccountById  - ==>  Preparing: select * from account a where uid=? 
+2019-06-17 15:15:57,760 490    [           main] DEBUG ao.IaccountDao.findAccountById  - ==> Parameters: 46(Integer)
+2019-06-17 15:15:57,761 491    [           main] DEBUG ao.IaccountDao.findAccountById  - <==      Total: 2
+2019-06-17 15:15:57,761 491    [           main] DEBUG ao.IaccountDao.findAccountById  - ==>  Preparing: select * from account a where uid=? 
+2019-06-17 15:15:57,762 492    [           main] DEBUG ao.IaccountDao.findAccountById  - ==> Parameters: 48(Integer)
+2019-06-17 15:15:57,762 492    [           main] DEBUG ao.IaccountDao.findAccountById  - <==      Total: 0
+2019-06-17 15:15:57,762 492    [           main] DEBUG ao.IaccountDao.findAccountById  - ==>  Preparing: select * from account a where uid=? 
+2019-06-17 15:15:57,765 495    [           main] DEBUG ao.IaccountDao.findAccountById  - ==> Parameters: 49(Integer)
+2019-06-17 15:15:57,765 495    [           main] DEBUG ao.IaccountDao.findAccountById  - <==      Total: 0
+2019-06-17 15:15:57,766 496    [           main] DEBUG ao.IaccountDao.findAccountById  - ==>  Preparing: select * from account a where uid=? 
+2019-06-17 15:15:57,766 496    [           main] DEBUG ao.IaccountDao.findAccountById  - ==> Parameters: 50(Integer)
+2019-06-17 15:15:57,767 497    [           main] DEBUG ao.IaccountDao.findAccountById  - <==      Total: 0
+2019-06-17 15:15:57,767 497    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a38d7a3]
+2019-06-17 15:15:57,768 498    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@a38d7a3]
+2019-06-17 15:15:57,768 498    [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 171497379 to pool.
