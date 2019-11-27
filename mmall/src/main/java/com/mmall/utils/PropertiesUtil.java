@@ -13,7 +13,7 @@ import java.util.Properties;
  * Created by geely
  */
 public class PropertiesUtil {
-    //定义一个日志对象
+    //定义一个日志对象 是的
     private static Logger logger = LoggerFactory.getLogger(PropertiesUtil.class);
 
     //定义静态 配置类的变量
