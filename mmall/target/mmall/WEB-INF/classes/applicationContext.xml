@@ -15,6 +15,7 @@
 
 
     <aop:aspectj-autoproxy/>
+<!--    添加 driven 标签-->
     <task:annotation-driven/>
 
     <import resource="applicationContext-datasource.xml"/>

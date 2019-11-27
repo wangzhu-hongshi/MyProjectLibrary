@@ -36,13 +36,13 @@ public class IUserServiceImpl implements IUserService{
         if(resultCount==0){
             return ServerResponse.createByErrorMessage("用户名不存在");
         }
-        //
+        //使用MD5 加密 密码 再进行查询  数据里存的已经加密的密码
         String md5Password = MD5Util.MD5EncodeUtf8(password);
         User user = userMapper.selectLogin(username,md5Password);
         if(user==null){
             return ServerResponse.createByErrorMessage("密码错误！");
         }
-        //把返回的密码设置为零
+        //把返回的密码设置为""
         user.setPassword(StringUtils.EMPTY);
         return ServerResponse.createBySuccess("登陆成功",user);
 

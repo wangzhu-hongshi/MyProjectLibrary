@@ -18,7 +18,8 @@ public class ExceptionResolver implements HandlerExceptionResolver {
     @Override
     public ModelAndView resolveException(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, Exception e) {
         log.error("{} Exception",httpServletRequest.getRequestURI(),e);
-        //将其转化为json
+        //将视图对象 转化为 json
+        //当使用是 jackson2.x的时候使用MappingJackson2JsonView,课程中使用的是1.9
         ModelAndView modelAndView=new ModelAndView(new MappingJacksonJsonView());
 
         modelAndView.addObject("status",ResponseCode.ERROR.getCode());

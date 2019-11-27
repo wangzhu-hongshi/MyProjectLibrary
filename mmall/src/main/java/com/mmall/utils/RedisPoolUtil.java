@@ -117,6 +117,20 @@ public class RedisPoolUtil {
         return result;
     }
 
+    public static void main(String[] args) {
+        RedisPoolUtil.set("wang","zhu");
+
+        String wang = RedisPoolUtil.get("wang");
+
+        RedisPoolUtil.setEx("key11","ni",10);
+
+        RedisPoolUtil.expire("wang",50);
+
+        RedisPoolUtil.del("wang");
+
+
+    }
+
 
 
 }

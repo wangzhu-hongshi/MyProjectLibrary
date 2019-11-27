@@ -34,7 +34,7 @@ public class RedisPool {
         //连接耗尽的时候 是否阻塞 false会抛出异常 true阻塞直到超时 默认时true
         config.setBlockWhenExhausted(true);
 
-        pool=new JedisPool(config,ip,host,1000*2);//创建连接池
+        pool=new JedisPool(config,ip,host,1000*2);//创建连接池  最后一个参数是超时时间
     }
     //随着类加载而加载 调用方法进行初始化
     static {

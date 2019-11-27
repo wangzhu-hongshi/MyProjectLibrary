@@ -24,6 +24,12 @@ import java.util.Map;
 
 /**
  * 拦截器
+ *
+ * 只能是 MVC 框架才能用
+ * 实现 HandlerInterceptor接口
+ *
+ * 返回布尔值 true 是放过
+ *  false 是拦截
  */
 @Slf4j
 public class AuthorityInterceotor implements HandlerInterceptor {

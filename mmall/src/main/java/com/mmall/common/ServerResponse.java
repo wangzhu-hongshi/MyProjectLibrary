@@ -6,8 +6,10 @@ import org.codehaus.jackson.map.annotate.JsonSerialize;
 import java.io.Serializable;
 
 /**
+ *
+ * 返回到页面的对象
  * 保证序列化json的时候，如果时null的对象，key也会消失
- * @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
+ * @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL) 只会返回不等于null的字段
  * @param <T>
  */
 @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)

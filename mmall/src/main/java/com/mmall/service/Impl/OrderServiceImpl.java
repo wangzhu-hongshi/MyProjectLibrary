@@ -449,20 +449,25 @@ public class OrderServiceImpl implements IOrderService {
     }
 
     /**
+     * hour 个小时以内未付款的订单，进行关闭
      * 关闭订单
-     * @param hour
+     * @param hour 小时
      */
     @Override
     public void closeOrder(int hour) {
+        //转化为 hour小时之前的时间
         Date closeDateTime = DateUtils.addHours(new Date(),-hour);
-        //查询 未支付 和 过时的订单
+        //查询 未支付 和 过时的订单 拿到订单列表
         List<Order> orderList =orderMapper.selectOrderStatusByCreateTime(Const.OrderStatusEnum.NO_PAY.getCode(),DateTimeUtil.dateToStr(closeDateTime));
+        //遍历订单列表
         for (Order order : orderList) {
-            //查询订单的详情
+            //根据订单号拿到订单详情列表
             List<OrderItem> orderItemList = orderItemMapper.getByOrderNo(order.getOrderNo());
+            //遍历订单详情列表
             for (OrderItem orderItem : orderItemList) {
                 //查询该商品的库存 并把库存更新回去
                 //一定要用主键 where条件 防止锁表 同时必须时支持MySQL 的InnoDB
+                //根据订单详情列表的商品id查询商品的库存
                 Integer stock = productMapper.selectStockByProductId(orderItem.getProductId());
                 //判断库存 是否空 考虑到已生成的订单里的商品，被删除的情况
                 if(stock==null){
@@ -472,10 +477,11 @@ public class OrderServiceImpl implements IOrderService {
                 //更行库存
                 Product product=new Product();
                 product.setId(orderItem.getProductId());
+                //把订单中的库存返回到原始库存
                 product.setStock(stock+orderItem.getQuantity());
                 productMapper.updateByPrimaryKeySelective(product);
             }
-            //关闭订单
+            //关闭订单 根据订单号 修改订单状态为已取消 状态码 0
             orderMapper.closeOrderByOrderId(order.getId());
             log.info("关闭订单OrderNo:{}",order.getOrderNo());
         }

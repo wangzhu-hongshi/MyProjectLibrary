@@ -260,6 +260,7 @@
         </configuration>
       </plugin>
     </plugins>
+<!--    环境隔离的配置-->
     <resources>
       <resource>
         <directory>src/main/resources.${deploy.type}</directory>
@@ -276,6 +277,7 @@
     <profile>
       <id>dev</id>
       <activation>
+<!--        表示默认环境  -->
         <activeByDefault>true</activeByDefault>
       </activation>
       <properties>

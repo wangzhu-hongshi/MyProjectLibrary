@@ -118,6 +118,13 @@ public class ProductManageController {
         return productService.manageProductDetail(productId);
     }
 
+    /**
+     * 查询所有 分页
+     * @param request
+     * @param pageNum
+     * @param pageSize
+     * @return
+     */
     @RequestMapping(value = "list.do", method = RequestMethod.GET)
     @ResponseBody
     public ServerResponse setSaleStatus(HttpServletRequest request, @RequestParam(value = "pageNum",defaultValue = "1") int pageNum,

@@ -61,6 +61,7 @@ public class IProductServiceImpl implements IProductService {
                 }
                 return ServerResponse.createByErrorMessage("更新产品失败");
             }else {
+                //为空则进行新增
                 int rowCount=productMapper.insert(product);
                 if(rowCount>0){
                     return ServerResponse.createBySuccessMessage("新增产品成功");
@@ -109,7 +110,9 @@ public class IProductServiceImpl implements IProductService {
     }
     public ProductDetailVo assemblePorductDetailVo(Product product){
         ProductDetailVo productDetailVo=new ProductDetailVo();
+        //把两个类中的相同的属性进行复制
         BeanUtils.copyProperties(product,productDetailVo);
+        //设置图片
         productDetailVo.setImageHost(PropertiesUtil.getProperty("ftp.server.http.prefix","http://image.mmall.com/"));
         Category category = categoryMapper.selectByPrimaryKey(product.getCategoryId());
         if(category==null){
@@ -162,7 +165,9 @@ public class IProductServiceImpl implements IProductService {
      */
     public ServerResponse<PageInfo> searchProduct(String productName,Integer productId,int pageNum,int pageSize){
         PageHelper.startPage(pageNum,pageSize);
+        //判断 productName是否为空
         if(StringUtils.isNotBlank(productName)){
+            //给 productName 加上 % 占位符
             productName=new StringBuilder().append("%").append(productName).append("%").toString();
         }
         List<Product> productList = productMapper.selectByNameAndProductId( productName,productId);
@@ -197,7 +202,7 @@ public class IProductServiceImpl implements IProductService {
     }
 
     /**
-     * 前台产品搜索及动态排序
+     * 前台产品模糊搜索及动态排序
      * @param keyword
      * @param categoryId
      * @param pageNum

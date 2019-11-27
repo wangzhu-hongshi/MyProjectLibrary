@@ -29,7 +29,7 @@ public class RedissonManager {
         return redisson;
     }
 
-    @PostConstruct
+    @PostConstruct //当调用构造器是加载 这个方法
     private void init(){
         try{
             //配置 redis信息
